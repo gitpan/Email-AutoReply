@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm,v 1.13 2004/12/28 19:18:30 adamm Exp $';
+our $rcsid = '$Id: AutoReply.pm 1430 2005-01-18 07:16:13Z adamm $';
 
 use strict;
 use warnings;
 
-our $VERSION = '0.06';
+our $VERSION = '1.00';
 
 =head1 NAME
 
@@ -86,6 +86,8 @@ field 'from_email';
 Set/get autoreply 'From' name for the autoreply. Example: 'Adam Monsen'.
 Note: this will be ignored unless from_email is also set.
 
+Default: undef
+
 =cut
 
 field 'from_realname';
@@ -95,7 +97,7 @@ field 'from_realname';
 Set/get the hostname where this package will be executed. This is used
 when constructing an X-Mail-AutoReply header for the autoreply.
 
-Default: (the addressed-to domain in input_email)
+Default: 'localhost'
 
 =cut
 
@@ -103,7 +105,9 @@ field 'hostname' => 'localhost';
 
 =item B<input_email>
 
-Set/get the email to parse and reply to.
+Set/get the full text of the email to parse and reply to.
+
+Default: undef
 
 =cut
 
@@ -112,6 +116,10 @@ field 'input_email';
 =item B<response_text>
 
 Set/get the string which will serve as the body of the autoreply.
+
+Default: 'Sorry, the person you're trying to reach is unavailable.
+This is an automated response from Mail::AutoReply. See
+http://search.cpan.org/perldoc?Mail-AutoReply for more info.'
 
 =cut
 
@@ -140,6 +148,20 @@ Default: 'Sendmail'
 =cut
 
 field 'send_method' => 'Sendmail';
+
+=item B<send_method_args>
+
+Set/get extra arguments passed to Email::Send::send(). By default, this is
+'"-f $bot_from"', and this string is eval()'d. Quotes are significant! This is
+double quotes inside of single quotes. $bot_from will expand to be either
+"from_realname" <from_email>, or the name specfied in the To: field of the
+original email (if from_email is unset).
+
+Default: '"-f $bot_from"'
+
+=cut
+
+field 'send_method_args' => '"-f $bot_from"';
 
 =item B<subject>
 
@@ -270,9 +292,10 @@ sub reply {
     $reply->header_set('To', $from->format);
     $reply->header_set('X-Mail-AutoReply', $autoreply_hdr);
     $reply->body_set($self->response_text);
-    # XXX -f adds envelope sender for sendmail only! This may break with
-    # other Email::Send sending methods.
-    Email::Send::send($self->send_method, $reply, "-f $bot_from");
+
+    my $send_method_args = eval($self->send_method_args);
+    die $@ if $@;
+    Email::Send::send($self->send_method, $reply, $send_method_args);
 
     # cache the email address we just sent to
     # XXX what if email sending failed?

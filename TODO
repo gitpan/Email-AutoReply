@@ -23,7 +23,6 @@
 [X] Email::Filter::AutoReply
 
 -----------------------------------------------------------------------
-$Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/TODO,v $
-Last Updated $Date: 2004/10/16 23:14:52 $ (Zulu)
-$Revision: 1.6 $$Author: adamm $
+Last Updated $Date: 2005-01-12 15:58:46 -0800 (Wed, 12 Jan 2005) $
+$Revision: 1407 $$Author: adamm $
 vim: tw=72

@@ -1,5 +1,11 @@
 Revision history for Perl extension Mail::AutoReply.
 
+1.00  Mon Jan 17 23:02:12 PST 2005
+	- added 'send_method_args' field for modifying arguments passed
+	  to sendmail (or whatever send_method is used) to fix
+	  rt.cpan.org ticket #9205. Feature suggested by Sean T. Allen.
+	- POD updates
+
 0.06  Tue Dec 28 10:58:30 PST 2004
 	- updated patterns of addresses *never* sent autoreplies
 	- POD and comment updates
@@ -27,7 +33,6 @@ Revision history for Perl extension Mail::AutoReply.
 
 
 -----------------------------------------------------------------------
-$Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/Changes,v $
-Last Updated $Date: 2004/12/28 19:18:30 $ (Zulu)
-$Revision: 1.6 $$Author: adamm $
+Last Updated $Date: 2005-01-17 23:16:13 -0800 (Mon, 17 Jan 2005) $
+$Revision: 1430 $$Author: adamm $
 vim: noet tw=72 sw=8
