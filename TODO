@@ -1,0 +1,20 @@
+[ ] ability to save a copy of outgoing message
+[ ] support for re-sending autoreply after a time period has elapsed
+[ ] implement 'already sent to' storage mechanism with pluggable backend
+[ ] add everything to Subversion or cvs
+[ ] path separators are hardcoded as forward-slashes (not
+    cross-platform)
+[ ] not using Berkeley DB transactions
+[ ] not using Berkeley DB locking
+[ ] Email::AutoReply::Filter
+[ ]   can't actually filter message... Email::Filter throws out the
+      envelope sender or procmail isn't giving it to us, or we need to
+      build it, or maybe I'm just doing something wrong, or ...?
+
+[X] Email::Filter::AutoReply
+
+-----------------------------------------------------------------------
+$Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/TODO,v $
+Last Updated $Date: 2004/08/25 04:05:14 $ (Zulu)
+$Revision: 1.2 $$Author: adamm $
+vim: tw=72

@@ -1,0 +1,16 @@
+name: Email-AutoReply
+version: 0.01
+abstract: Perl extension for writing email autoresponders
+author: Adam Monsen <adamm@wazamatta.com>
+license: perl
+distribution_type: module
+build_requires:
+  Test::More: 0
+requires:
+  perl: 5.8.3
+  Spiffy: 0
+  YAML: 0
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.35

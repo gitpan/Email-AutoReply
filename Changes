@@ -1,0 +1,9 @@
+Revision history for Perl extension Mail::AutoReply.
+
+0.02  Tue Aug 24 19:27:58 PDT 2004
+	- first CPAN release
+
+0.01  Sat Aug 14 17:32:49 2004
+	- original version; created by h2xs 1.23 with options
+		-AX -n Mail::AutoReply
+
