@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm,v 1.7 2004/08/25 22:41:06 adamm Exp $';
+our $rcsid = '$Id: AutoReply.pm,v 1.11 2004/10/17 00:06:43 adamm Exp $';
 
 use strict;
 use warnings;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
@@ -73,11 +73,26 @@ Default: 0
 
 field 'debug' => 0;
 
+=item B<from_email>
+
+Set/get autoreply 'From' email for the autoreply. Example: 'adam@example.com'.
+
+=cut
+
+field 'from_email';
+
+=item B<from_realname>
+
+Set/get autoreply 'From' name for the autoreply. Example: 'Adam Monsen'.
+
+=cut
+
+field 'from_realname';
+
 =item B<hostname>
 
 Set/get the hostname where this package will be executed. This is used
-when constructing a 'from' address for the autoreply and for adding an
-X-Mail-AutoReply header to the autoreply.
+when constructing an X-Mail-AutoReply header for the autoreply.
 
 Default: (the addressed-to domain in input_email)
 
@@ -135,18 +150,6 @@ Default: 'Out Of Office Automated Response'
 
 field 'subject' => 'Out Of Office Automated Response';
 
-=item B<user>
-
-Set/get the user who is executing this code. This is used when
-constructing a 'from' address for the autoreply and for adding an
-X-Mail-AutoReply header to the autoreply.
-
-Default: (the addressed-to user in input_email)
-
-=cut
-
-field 'user';
-
 ### private fields
 field '_cache_db';
 
@@ -202,10 +205,9 @@ sub _create_autoreply_from_address {
   ref $args{input_to} eq 'Email::Address'
     or confess 'input_to must be an Email::Address object';
   my $rv;
-  if ($self->user) {
-    $self->hostname or confess "hostname not set!";
-    $rv = $self->user . '@' . $self->hostname;
-    $rv = new Email::Address->new(undef, $rv);
+  if ($self->from_email) {
+    my $name = $self->from_realname || undef;
+    $rv = Email::Address->new($name => $self->from_email);
   } else {
     $rv = $args{input_to};
   }
@@ -249,6 +251,7 @@ sub reply {
   confess "couldn't parse a To address" if not $to;
 
   if (not $self->in_cache(email=>$from_address) and
+      not $self->noreply_sender(email=>$from_address) and
       not $self->is_maillist_msg(mailobj=>$mail) and
       not $self->we_touched_it(mailobj=>$mail)) {
 
@@ -290,6 +293,22 @@ sub in_cache {
   my $found =  $self->_cache_db->fetch($args{email}) ? 1 : 0;
   warn "$args{email} in cache? ... '$found' " if $self->debug;
   return $found ? 1 : 0;
+}
+
+sub noreply_sender {
+  my %args = (email => undef, @_);
+
+  my @patterns = (
+    qr/bounces.+@/,
+    qr/subscribe.+@/,
+    qr/noreply.+@/,
+  );
+
+  for (@patterns) {
+    return 1 if $args{email} =~ m/$_/i;
+  }
+
+  return 0;
 }
 
 sub is_maillist_msg {

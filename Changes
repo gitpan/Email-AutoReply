@@ -1,5 +1,12 @@
 Revision history for Perl extension Mail::AutoReply.
 
+0.05  Sat Oct 16 17:04:55 PDT 2004
+        - allow easy creation of From address for autoreply using new
+	  attributes from_realname and from_email (see POD)
+	- removed 'user' attribute
+        - fixed bug in creation of From address for autoreply
+	- Email::AutoReply is now in Public Beta release
+
 0.04  Wed Aug 25 08:39:55 PDT 2004
 	- more minor POD clean-ups. Try to encourage users to read
 	Email::AutoReply::DB instead of implementing classes' POD
@@ -17,6 +24,6 @@ Revision history for Perl extension Mail::AutoReply.
 
 -----------------------------------------------------------------------
 $Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/Changes,v $
-Last Updated $Date: 2004/08/25 22:41:06 $ (Zulu)
-$Revision: 1.4 $$Author: adamm $
+Last Updated $Date: 2004/10/17 00:06:43 $ (Zulu)
+$Revision: 1.5 $$Author: adamm $
 vim: noet tw=72 sw=8
