@@ -1,5 +1,5 @@
 package Email::AutoReply::DB;
-our $rcsid = '$Id: DB.pm,v 1.3 2004/08/25 22:41:06 adamm Exp $';
+our $rcsid = '$Id: DB.pm,v 1.4 2004/12/28 19:18:30 adamm Exp $';
 
 use strict;
 use warnings;
@@ -51,7 +51,7 @@ Fetch all Email::AutoReply::Recipient objects from the database, if any exist.
 
 Input: none.
 
-Output: A list of Email::AutoReply::Recipient objects, or the empty list.
+Output: A list of Email::AutoReply::Recipient objects, or zero.
 
 =cut
 

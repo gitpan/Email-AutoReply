@@ -1,5 +1,5 @@
 package Email::AutoReply::DB::BerkeleyDB;
-our $rcsid = '$Id: BerkeleyDB.pm,v 1.2 2004/08/25 22:41:06 adamm Exp $';
+our $rcsid = '$Id: BerkeleyDB.pm,v 1.3 2004/12/28 19:18:30 adamm Exp $';
 
 use strict;
 use warnings;
@@ -45,7 +45,7 @@ sub store {
 }
 
 #  INPUT: string to search for
-# OUTPUT: Email::AutoReply::Recipient object, or an empty list
+# OUTPUT: Email::AutoReply::Recipient object, or zero
 sub fetch {
   my $timestamp = $self->_db->{$_[0]};
   my $rv = 0;

@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm,v 1.11 2004/10/17 00:06:43 adamm Exp $';
+our $rcsid = '$Id: AutoReply.pm,v 1.13 2004/12/28 19:18:30 adamm Exp $';
 
 use strict;
 use warnings;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 NAME
 
@@ -84,6 +84,7 @@ field 'from_email';
 =item B<from_realname>
 
 Set/get autoreply 'From' name for the autoreply. Example: 'Adam Monsen'.
+Note: this will be ignored unless from_email is also set.
 
 =cut
 
@@ -299,9 +300,10 @@ sub noreply_sender {
   my %args = (email => undef, @_);
 
   my @patterns = (
-    qr/bounces.+@/,
-    qr/subscribe.+@/,
-    qr/noreply.+@/,
+    qr/bounces.*@/,
+    qr/subscribe.*@/,
+    qr/noreply.*@/,
+    qr/mailer-daemon@/,
   );
 
   for (@patterns) {
@@ -341,7 +343,7 @@ Adam Monsen, <adamm@wazamatta.com>
 
 =head1 BUGS
 
-To report bugs, go to
+To report bugs or enter feature requests, go to
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Email-AutoReply>
 
