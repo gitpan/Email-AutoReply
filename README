@@ -29,7 +29,12 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 
   Spiffy, File::Path, Email::Address, Email::Send, Email::Simple,
-  Mail::ListDetector, Test::More, BerkeleyDB
+  Mail::ListDetector, Test::More
+
+If you are using Email::AutoReply::DB::BerkeleyDB for cachedb_type
+(the default), the following other modules must be installed:
+
+  BerkeleyDB
 
 This module uses Email::Send's sendmail send method by default, which
 means sendmail must be in your path.
@@ -53,6 +58,6 @@ See http://www.perl.com/perl/misc/Artistic.html
 
 -----------------------------------------------------------------------
 $Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/README,v $
-Last Updated $Date: 2004/08/25 03:10:34 $ (Zulu)
-$Revision: 1.7 $$Author: adamm $
+Last Updated $Date: 2004/08/25 15:52:19 $ (Zulu)
+$Revision: 1.8 $$Author: adamm $
 vim: tw=72

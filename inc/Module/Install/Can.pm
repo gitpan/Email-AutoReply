@@ -1,6 +1,6 @@
 #line 1 "inc/Module/Install/Can.pm - /usr/lib/perl5/site_perl/5.8.3/Module/Install/Can.pm"
-# $File: //depot/cpan/Module-Install/lib/Module/Install/Can.pm $ $Author: adamm $
-# $Revision: 1.1.1.1 $ $Change: 1840 $ $DateTime: 2003/12/28 19:42:02 $ vim: expandtab shiftwidth=4
+# $File: //depot/cpan/Module-Install/lib/Module/Install/Can.pm $ $Author: autrijus $
+# $Revision: #6 $ $Change: 1840 $ $DateTime: 2003/12/28 19:42:02 $ vim: expandtab shiftwidth=4
 
 package Module::Install::Can;
 use Module::Install::Base; @ISA = qw(Module::Install::Base);

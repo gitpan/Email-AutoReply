@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm,v 1.5 2004/08/25 04:04:05 adamm Exp $';
+our $rcsid = '$Id: AutoReply.pm,v 1.6 2004/08/25 15:52:19 adamm Exp $';
 
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -24,8 +24,8 @@ input.
 
 The module will reply once to each email address it sees, storing
 sent-to addresses in a database. This database is
-Email::AutoReply::DB::BerkeleyDB by default, but any class that implements
-Email::AutoReply::DB may be used.
+L<Email::AutoReply::DB::BerkeleyDB> by default, but any class that
+implements L<Email::AutoReply::DB> may be used.
 
 =cut
 
@@ -41,13 +41,23 @@ use Mail::ListDetector;
 
 =head2 ATTRIBUTES
 
+All attributes are set and get using code similar to the following:
+
+  $auto = new Email::AutoReply;
+
+  # get debug status
+  $dbg = $auto->debug;
+
+  # set debug status to "on"
+  $auto->debug(1);
+
 =over 4
 
 =item B<cachedb_type>
 
 Set/get the class to use for the cache DB.
 
-Default: Email::AutoReply::DB::BerkeleyDB
+Default: 'Email::AutoReply::DB::BerkeleyDB'
 
 =cut
 
@@ -204,8 +214,9 @@ sub _create_autoreply_from_address {
 
 =item B<dbdump>
 
-Takes no arguments, returns a list of emails in the "already sent to"
-database.
+Takes no arguments.
+
+Returns a list of emails in the "already sent to" database.
 
 =cut
 
@@ -219,6 +230,8 @@ Takes no arguments. If the 'input_email' attribute is set, this class
 will read that as the email to (possibly) autoreply to. If the
 'input_email' attribute is not set, an email message will be extracted
 from standard input.
+
+No return value.
 
 =cut
 
@@ -300,21 +313,24 @@ sub we_touched_it {
 1;
 
 __END__
+
+=back
+
 =head1 AUTHOR
 
-Adam Monsen, E<lt>adamm@wazamatta.comE<gt>
+Adam Monsen, <adamm@wazamatta.com>
 
 =head1 BUGS
 
 To report bugs, go to
 
-E<lt>http://rt.cpan.org/NoAuth/Bugs.html?Dist=Email-AutoReplyE<gt>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Email-AutoReply>
 
-or send mail to E<lt>bug-Email-AutoReply@rt.cpan.orgE<gt>
+or send mail to <bug-Email-AutoReply@rt.cpan.org>
 
 =head1 SEE ALSO
 
-Email::Send, Mail::Vacation
+L<Email::Send>, L<Mail::Vacation>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -324,6 +340,6 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
 at your option, any later version of Perl 5 you may have available.
 
-See E<lt>http://www.perl.com/perl/misc/Artistic.htmlE<gt>
+See L<http://www.perl.com/perl/misc/Artistic.html>
 
 =cut

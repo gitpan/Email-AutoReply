@@ -1,5 +1,5 @@
 package Email::AutoReply::DB;
-our $rcsid = '$Id: DB.pm,v 1.1.1.1 2004/08/25 02:23:16 adamm Exp $';
+our $rcsid = '$Id: DB.pm,v 1.2 2004/08/25 15:52:19 adamm Exp $';
 
 use strict;
 use warnings;
@@ -30,7 +30,7 @@ Output: none.
 
 =cut
 
-stub 'store';     # stores an Email::AutoReply::Recipient
+stub 'store';
 
 =item B<fetch>
 
@@ -43,7 +43,7 @@ found matching the given string.
 
 =cut
 
-stub 'fetch';     # fetches an Email::AutoReply::Recipient
+stub 'fetch';
 
 =item B<fetch_all>
 
@@ -55,18 +55,22 @@ Output: A list of Email::AutoReply::Recipient objects, or the empty list.
 
 =cut
 
-stub 'fetch_all'; # fetches all Email::AutoReply::Recipient objects in db
+stub 'fetch_all';
 
 return 1;
 
 __END__
+
+=back
+
 =head1 AUTHOR
 
-Adam Monsen, E<lt>adamm@wazamatta.comE<gt>
+Adam Monsen, <adamm@wazamatta.com>
 
 =head1 SEE ALSO
 
-Email::AutoReply, Email::AutoReply::DB::BerkeleyDB
+L<Email::AutoReply>, L<Email::AutoReply::DB::BerkeleyDB>,
+L<Email::AutoReply::Recipient>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -76,6 +80,6 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
 at your option, any later version of Perl 5 you may have available.
 
-See E<lt>http://www.perl.com/perl/misc/Artistic.htmlE<gt>
+See L<http://www.perl.com/perl/misc/Artistic.html>
 
 =cut

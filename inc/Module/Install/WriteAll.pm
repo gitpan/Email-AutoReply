@@ -1,6 +1,6 @@
 #line 1 "inc/Module/Install/WriteAll.pm - /usr/lib/perl5/site_perl/5.8.3/Module/Install/WriteAll.pm"
-# $File: //depot/cpan/Module-Install/lib/Module/Install/WriteAll.pm $ $Author: adamm $
-# $Revision: 1.1.1.1 $ $Change: 1885 $ $DateTime: 2004/03/11 05:55:27 $ vim: expandtab shiftwidth=4
+# $File: //depot/cpan/Module-Install/lib/Module/Install/WriteAll.pm $ $Author: autrijus $
+# $Revision: #3 $ $Change: 1885 $ $DateTime: 2004/03/11 05:55:27 $ vim: expandtab shiftwidth=4
 
 package Module::Install::WriteAll;
 use Module::Install::Base; @ISA = qw(Module::Install::Base);
