@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm,v 1.6 2004/08/25 15:52:19 adamm Exp $';
+our $rcsid = '$Id: AutoReply.pm,v 1.7 2004/08/25 22:41:06 adamm Exp $';
 
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -23,8 +23,8 @@ will try to respond (using Sendmail) to an email message given as standard
 input.
 
 The module will reply once to each email address it sees, storing
-sent-to addresses in a database. This database is
-L<Email::AutoReply::DB::BerkeleyDB> by default, but any class that
+sent-to addresses in a database. This database class is
+Email::AutoReply::DB::BerkeleyDB by default, but any class that
 implements L<Email::AutoReply::DB> may be used.
 
 =cut

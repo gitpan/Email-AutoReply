@@ -1,5 +1,5 @@
 package Email::AutoReply::DB::BerkeleyDB;
-our $rcsid = '$Id: BerkeleyDB.pm,v 1.1.1.1 2004/08/25 02:23:16 adamm Exp $';
+our $rcsid = '$Id: BerkeleyDB.pm,v 1.2 2004/08/25 22:41:06 adamm Exp $';
 
 use strict;
 use warnings;
@@ -64,3 +64,28 @@ sub fetch_all {
 }
 
 return 1;
+__END__
+
+=head1 NAME
+
+Email::AutoReply::DB::BerkeleyDB - Berkeley DB autoreply cache database
+
+=head1 DESCRIPTION
+
+Please see L<Email::AutoReply::DB>, the interface this class implements.
+
+=head1 AUTHOR
+
+Adam Monsen, <adamm@wazamatta.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2004 by Adam Monsen
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.3 or,
+at your option, any later version of Perl 5 you may have available.
+
+See L<http://www.perl.com/perl/misc/Artistic.html>
+
+=cut

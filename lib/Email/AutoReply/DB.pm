@@ -1,5 +1,5 @@
 package Email::AutoReply::DB;
-our $rcsid = '$Id: DB.pm,v 1.2 2004/08/25 15:52:19 adamm Exp $';
+our $rcsid = '$Id: DB.pm,v 1.3 2004/08/25 22:41:06 adamm Exp $';
 
 use strict;
 use warnings;
@@ -69,8 +69,7 @@ Adam Monsen, <adamm@wazamatta.com>
 
 =head1 SEE ALSO
 
-L<Email::AutoReply>, L<Email::AutoReply::DB::BerkeleyDB>,
-L<Email::AutoReply::Recipient>
+L<Email::AutoReply>, L<Email::AutoReply::Recipient>
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -1,5 +1,5 @@
 package Email::AutoReply::Recipient;
-our $rcsid = '$Id: Recipient.pm,v 1.2 2004/08/25 15:52:19 adamm Exp $';
+our $rcsid = '$Id: Recipient.pm,v 1.3 2004/08/25 22:31:04 adamm Exp $';
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use Spiffy '-Base';
 
 =head1 NAME
 
-Email::AutoReply::Recpipent - recipient of an autoreply
+Email::AutoReply::Recipient - recipient of an autoreply
 
 =head1 DESCRIPTION
 

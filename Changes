@@ -1,5 +1,9 @@
 Revision history for Perl extension Mail::AutoReply.
 
+0.04  Wed Aug 25 08:39:55 PDT 2004
+	- more minor POD clean-ups. Try to encourage users to read
+	Email::AutoReply::DB instead of implementing classes' POD
+
 0.03  Wed Aug 25 08:39:55 PDT 2004
 	- major POD clean-up
 
@@ -13,6 +17,6 @@ Revision history for Perl extension Mail::AutoReply.
 
 -----------------------------------------------------------------------
 $Source: /home/adamm/cvs/my_cvsroot/personal/code/perl/cpan/Email-AutoReply/Changes,v $
-Last Updated $Date: 2004/08/25 15:52:18 $ (Zulu)
-$Revision: 1.3 $$Author: adamm $
+Last Updated $Date: 2004/08/25 22:41:06 $ (Zulu)
+$Revision: 1.4 $$Author: adamm $
 vim: noet tw=72 sw=8

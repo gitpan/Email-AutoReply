@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 572bd0f7b74331523ab3abc781dadd2155feb05b Changes
+SHA1 852e5509726fd5559d4726e19073c28dbd72d981 Changes
 SHA1 44df68c49de8a2c6ab81568336cbd10f6adf21ff MANIFEST
 SHA1 627d86aa2c3d411f2c44b1957b09b3725d484369 MANIFEST.SKIP
-SHA1 1d201a41d7feb8f547fc5bc7b16ff579993915cf META.yml
+SHA1 01bafd5e3068eb3bc6e38f6bf1a60e742d6bef08 META.yml
 SHA1 740fd6a506672760463f575722d23b5d8487975d Makefile.PL
 SHA1 f7ecd1522c0ac2b5ffc80504d5c84cc76e2896e5 README
 SHA1 6ab20662db747b7d4e676102c454b867c59bba43 TODO
@@ -31,17 +31,17 @@ SHA1 01a663cca7d82b711d8dbde5e0852a7606b8299c inc/Module/Install/Makefile.pm
 SHA1 a49cd0e5b89b5db14e213b0a040a23951437d283 inc/Module/Install/Metadata.pm
 SHA1 690dbb57a76f164b9f49bb61c81245ffb2982e88 inc/Module/Install/Win32.pm
 SHA1 15dfcd0aa2850f45b2ef09ea3cded7947993ed74 inc/Module/Install/WriteAll.pm
-SHA1 13ff4f9e9150b349194255fb6c0f561a41b3e9aa lib/Email/AutoReply.pm
-SHA1 83cbdb6c673daeafed627ad85ec3cc82b7f7046d lib/Email/AutoReply/DB.pm
-SHA1 5ed81cd46d4f2cea4d20a842102753f5aedb1fc6 lib/Email/AutoReply/DB/BerkeleyDB.pm
-SHA1 4dc9be5ecede6b1a090925f3fa6323de38aa7dc6 lib/Email/AutoReply/Recipient.pm
+SHA1 0cf411b7bc3c6b8c92818af60af77cffaf6fd36e lib/Email/AutoReply.pm
+SHA1 b63341cd6d46046e4049d5bc6b8ceddbac1e7c70 lib/Email/AutoReply/DB.pm
+SHA1 6c061c384ffb51ddf024ac58b6409effb161d962 lib/Email/AutoReply/DB/BerkeleyDB.pm
+SHA1 37d41e13c9ffd1e0ca13b7e41ba1fc61b6be9c39 lib/Email/AutoReply/Recipient.pm
 SHA1 8ada6deb4dc8c0933f4e9e22abc10d82611800d1 lib/Email/Filter/AutoReply.pm
 SHA1 7ea05e2a94497bf23abd9cb3b97bcaa0ea0b8480 t/Email-AutoReply.t
 SHA1 020b10bdbf6692d33ec00a5e575de7bcd494c093 t/Email-Filter-AutoReply.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.3 (GNU/Linux)
 
-iD8DBQFBLMeLNuGm84aZEmgRAoTzAJ9vooj3slVOpaZJTMkMKm95KJZe7ACfUS8e
-1a82/Gz6acayu0w5/lQCq8Y=
-=dn5d
+iD8DBQFBLRX2NuGm84aZEmgRAs1UAJ0auc5/zo56W5kfHwMvRM2qxj+bmgCfWc4N
+JyFIijwofMTju4Sop2Z8pFc=
+=KyA5
 -----END PGP SIGNATURE-----
