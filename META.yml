@@ -1,5 +1,5 @@
 name: Email-AutoReply
-version: 1.00
+version: 1.01
 abstract: Perl extension for writing email autoresponders
 author: Adam Monsen <adamm@wazamatta.com>
 license: perl

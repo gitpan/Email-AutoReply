@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm 1430 2005-01-18 07:16:13Z adamm $';
+our $rcsid = '$Id: AutoReply.pm 1436 2005-01-18 16:20:53Z adamm $';
 
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 =head1 NAME
 
@@ -154,8 +154,10 @@ field 'send_method' => 'Sendmail';
 Set/get extra arguments passed to Email::Send::send(). By default, this is
 '"-f $bot_from"', and this string is eval()'d. Quotes are significant! This is
 double quotes inside of single quotes. $bot_from will expand to be either
-"from_realname" <from_email>, or the name specfied in the To: field of the
-original email (if from_email is unset).
+from_email, or the name specfied in the To: field of the original email (if
+from_email is unset). '"-f $bot_from"' is sendmail-specific, by the way, and
+basically tells Sendmail to set the envelope sender to something different
+than the default. See sendmail(8) for more details.
 
 Default: '"-f $bot_from"'
 

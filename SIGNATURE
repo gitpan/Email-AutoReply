@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 a2558876274178b79dff07bae45088b55cf14e18 Changes
+SHA1 7944f18f033c4f55d5fd063c67bf952f7a6996be Changes
 SHA1 44df68c49de8a2c6ab81568336cbd10f6adf21ff MANIFEST
 SHA1 627d86aa2c3d411f2c44b1957b09b3725d484369 MANIFEST.SKIP
-SHA1 deb515f36587fc7b33632c13b0dabbfca9609300 META.yml
+SHA1 841ed2f100bf126dbf8819dfe908784145062a56 META.yml
 SHA1 740fd6a506672760463f575722d23b5d8487975d Makefile.PL
 SHA1 4bbf2b709c29b092f6f32dbe3e6fd3b25b2a4aa7 README
 SHA1 3722f6ccbe9a646c907a5ad1967ca766762c438d TODO
@@ -31,7 +31,7 @@ SHA1 01a663cca7d82b711d8dbde5e0852a7606b8299c inc/Module/Install/Makefile.pm
 SHA1 a49cd0e5b89b5db14e213b0a040a23951437d283 inc/Module/Install/Metadata.pm
 SHA1 690dbb57a76f164b9f49bb61c81245ffb2982e88 inc/Module/Install/Win32.pm
 SHA1 15dfcd0aa2850f45b2ef09ea3cded7947993ed74 inc/Module/Install/WriteAll.pm
-SHA1 1f4a774981719ecf40e93fb14e6a67c9486d4247 lib/Email/AutoReply.pm
+SHA1 fa2d08a0edd47cd5edf0fc585b9b5a04788a8f26 lib/Email/AutoReply.pm
 SHA1 c8fffd59d93027895acd7b8ae2754de324cddd88 lib/Email/AutoReply/DB.pm
 SHA1 da18d3fd5b5c6a07eac7aa160af540ab18439fbd lib/Email/AutoReply/DB/BerkeleyDB.pm
 SHA1 6f392c8fdc83e116683db6297a9977faea1a77b0 lib/Email/AutoReply/Recipient.pm
@@ -41,7 +41,7 @@ SHA1 020b10bdbf6692d33ec00a5e575de7bcd494c093 t/Email-Filter-AutoReply.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.6 (GNU/Linux)
 
-iD8DBQFB7LfRI/2Fnd3kXZIRArpNAKC6AJyJGvh9H4Ffpkwf9kQ00qJMzgCgt2z3
-+KC2tM4Wk0dg58LD86OxlIM=
-=WFfC
+iD8DBQFB7Td+I/2Fnd3kXZIRAi51AKCeku+QKqVH8E1utagAma4PGsYUowCdG1uA
+kUvx/LrubMC3sZKAMypnMmI=
+=Bkbz
 -----END PGP SIGNATURE-----
