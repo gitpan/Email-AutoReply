@@ -1,5 +1,5 @@
 package Email::AutoReply::Recipient;
-our $rcsid = '$Id: Recipient.pm 1066 2004-08-25 22:31:04Z adamm $';
+our $rcsid = '$Id: Recipient.pm 843 2004-08-25 22:31:04Z adamm $';
 
 use strict;
 use warnings;

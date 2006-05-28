@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-our $rcsid = '$Id: on_vacation 1045 2004-08-25 04:09:26Z adamm $';
+our $rcsid = '$Id: on_vacation 822 2004-08-25 04:09:26Z adamm $';
 use strict;
 
 use Email::AutoReply;

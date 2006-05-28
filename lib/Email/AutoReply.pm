@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm 1436 2005-01-18 16:20:53Z adamm $';
+our $rcsid = '$Id: AutoReply.pm 1769 2006-05-28 06:09:12Z adamm $';
 
 use strict;
 use warnings;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 =head1 NAME
 
@@ -118,15 +118,15 @@ field 'input_email';
 Set/get the string which will serve as the body of the autoreply.
 
 Default: 'Sorry, the person you're trying to reach is unavailable.
-This is an automated response from Mail::AutoReply. See
-http://search.cpan.org/perldoc?Mail-AutoReply for more info.'
+This is an automated response from Email::AutoReply. See
+http://search.cpan.org/perldoc?Email::AutoReply for more info.'
 
 =cut
 
 field response_text => <<'AutomatedResponse';
 Sorry, the person you're trying to reach is unavailable.
-This is an automated response from Mail::AutoReply. See
-http://search.cpan.org/perldoc?Mail-AutoReply for more info.
+This is an automated response from Email::AutoReply. See
+http://search.cpan.org/perldoc?Email::AutoReply for more info.
 AutomatedResponse
 
 =item B<settings_dir>

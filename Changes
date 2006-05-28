@@ -1,4 +1,6 @@
 Revision history for Perl extension Mail::AutoReply.
+1.02  Sat May 27 23:06:25 PDT 2006
+	- fixed URLs in default response text. Thanks: David Ljung Madison
 
 1.01  Tue Jan 18 08:19:19 PST 2005
 	- small POD fix for 'send_method_args'
@@ -14,10 +16,10 @@ Revision history for Perl extension Mail::AutoReply.
 	- POD and comment updates
 
 0.05  Sat Oct 16 17:04:55 PDT 2004
-        - allow easy creation of From address for autoreply using new
+	- allow easy creation of From address for autoreply using new
 	  attributes from_realname and from_email (see POD)
 	- removed 'user' attribute
-        - fixed bug in creation of From address for autoreply
+	- fixed bug in creation of From address for autoreply
 	- Email::AutoReply is now in Public Beta release
 
 0.04  Wed Aug 25 08:39:55 PDT 2004
@@ -36,6 +38,6 @@ Revision history for Perl extension Mail::AutoReply.
 
 
 -----------------------------------------------------------------------
-Last Updated $Date: 2005-01-18 08:20:53 -0800 (Tue, 18 Jan 2005) $
-$Revision: 1436 $$Author: adamm $
+Last Updated $Date: 2006-05-27 23:09:12 -0700 (Sat, 27 May 2006) $
+$Revision: 1769 $$Author: adamm $
 vim: noet tw=72 sw=8

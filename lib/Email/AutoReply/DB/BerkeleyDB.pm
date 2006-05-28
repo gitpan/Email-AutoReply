@@ -1,5 +1,5 @@
 package Email::AutoReply::DB::BerkeleyDB;
-our $rcsid = '$Id: BerkeleyDB.pm 1349 2004-12-28 19:18:30Z adamm $';
+our $rcsid = '$Id: BerkeleyDB.pm 1119 2004-12-28 19:18:30Z adamm $';
 
 use strict;
 use warnings;
