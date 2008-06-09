@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm 3012 2008-06-09 21:34:16Z adam $';
+our $rcsid = '$Id: AutoReply.pm 3014 2008-06-09 21:59:36Z adam $';
 
 use strict;
 use warnings;
 
-our $VERSION = '1.03';
+our $VERSION = '1.04';
 
 =head1 NAME
 

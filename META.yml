@@ -26,4 +26,4 @@ requires:
   Mail::ListDetector: 0
   Spiffy: 0.14
   perl: 5.8.3
-version: 1.03
+version: 1.04

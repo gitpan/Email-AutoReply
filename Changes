@@ -1,4 +1,7 @@
 Revision history for Perl extension Mail::AutoReply.
+1.04  Mon Jun  9 14:58:22 PDT 2008
+	- patch from Pascal Gloor to improve bounce detection.
+
 1.02  Sat May 27 23:06:25 PDT 2006
 	- fixed URLs in default response text. Thanks: David Ljung Madison
 
@@ -38,6 +41,6 @@ Revision history for Perl extension Mail::AutoReply.
 
 
 -----------------------------------------------------------------------
-Last Updated $Date: 2006-05-27 23:09:12 -0700 (Sat, 27 May 2006) $
-$Revision: 1769 $$Author: adamm $
+Last Updated $Date: 2008-06-09 14:59:36 -0700 (Mon, 09 Jun 2008) $
+$Revision: 3014 $$Author: adam $
 vim: noet tw=72 sw=8
