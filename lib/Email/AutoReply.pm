@@ -1,10 +1,10 @@
 package Email::AutoReply;
-our $rcsid = '$Id: AutoReply.pm 1769 2006-05-28 06:09:12Z adamm $';
+our $rcsid = '$Id: AutoReply.pm 3012 2008-06-09 21:34:16Z adam $';
 
 use strict;
 use warnings;
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 =head1 NAME
 
@@ -271,7 +271,7 @@ sub reply {
   my $mail = new Email::Simple($input);
   my ($from) = Email::Address->parse($mail->header("From"));
   confess "couldn't parse a From address" if not $from;
-  my ($from_address) = $from->address;
+  my ($from_address) = lc($from->address);
   my ($to) = Email::Address->parse($mail->header("To"));
   confess "couldn't parse a To address" if not $to;
 
@@ -364,7 +364,7 @@ __END__
 
 =head1 AUTHOR
 
-Adam Monsen, <adamm@wazamatta.com>
+Adam Monsen, <haircut@gmail.com>
 
 =head1 BUGS
 
@@ -380,7 +380,7 @@ L<Email::Send>, L<Mail::Vacation>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by Adam Monsen
+Copyright (C) 2004-2008 by Adam Monsen
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,

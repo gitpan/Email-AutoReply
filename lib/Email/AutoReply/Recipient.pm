@@ -1,5 +1,5 @@
 package Email::AutoReply::Recipient;
-our $rcsid = '$Id: Recipient.pm 843 2004-08-25 22:31:04Z adamm $';
+our $rcsid = '$Id: Recipient.pm 3002 2008-06-05 20:23:24Z adam $';
 
 use strict;
 use warnings;
@@ -45,7 +45,7 @@ __END__
 
 =head1 AUTHOR
 
-Adam Monsen, <adamm@wazamatta.com>
+Adam Monsen, <haircut@gmail.com>
 
 =head1 SEE ALSO
 
@@ -53,7 +53,7 @@ L<Email::AutoReply>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by Adam Monsen
+Copyright (C) 2004-2008 by Adam Monsen
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,

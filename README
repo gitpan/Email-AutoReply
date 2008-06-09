@@ -47,7 +47,7 @@ or send mail to bug-Email-AutoReply@rt.cpan.org
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2004 by Adam Monsen <adamm@wazamatta.com>
+Copyright (C) 2004-2008 by Adam Monsen <haircut@gmail.com>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
@@ -57,6 +57,6 @@ See http://www.perl.com/perl/misc/Artistic.html
 
 
 -----------------------------------------------------------------------
-Last Updated $Date: 2005-01-12 15:58:46 -0800 (Wed, 12 Jan 2005) $
-$Revision: 1155 $$Author: adamm $
+Last Updated $Date: 2008-06-05 13:23:24 -0700 (Thu, 05 Jun 2008) $
+$Revision: 3002 $$Author: adam $
 vim: tw=72

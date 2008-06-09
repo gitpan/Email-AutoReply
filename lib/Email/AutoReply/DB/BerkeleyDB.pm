@@ -1,5 +1,5 @@
 package Email::AutoReply::DB::BerkeleyDB;
-our $rcsid = '$Id: BerkeleyDB.pm 1119 2004-12-28 19:18:30Z adamm $';
+our $rcsid = '$Id: BerkeleyDB.pm 3002 2008-06-05 20:23:24Z adam $';
 
 use strict;
 use warnings;
@@ -76,11 +76,11 @@ Please see L<Email::AutoReply::DB>, the interface this class implements.
 
 =head1 AUTHOR
 
-Adam Monsen, <adamm@wazamatta.com>
+Adam Monsen, <haircut@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by Adam Monsen
+Copyright (C) 2004-2008 by Adam Monsen
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,

@@ -1,7 +1,7 @@
 use inc::Module::Install;
 
 name            ('Email-AutoReply');
-author          ('Adam Monsen <adamm@wazamatta.com>');
+author          ('Adam Monsen <haircut@gmail.com>');
 abstract_from   ('lib/Email/AutoReply.pm');
 version_from    ('lib/Email/AutoReply.pm');
 license         ('perl');
